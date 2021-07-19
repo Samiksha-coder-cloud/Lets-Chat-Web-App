@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(238, 142, 190);
+}
+
+#msg_icon {
+    height:60px;
+    width:60px;
+}
+
+.header
+{
+	color: rgb(250, 6, 120);
+    font-family:"Permanent Marker";
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-top: 80px;
+}
+
+.login_div
+{
+	background: rgba(250, 3, 176, 0.8);
+    float: none;
+    border-radius: 15px;
+}
+
+.logo
+{
+	width: 80px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+#login_button
+{
+	width: 80%;
+    border-radius: 15px;
+    background: rgb(243, 0, 142);
+    border-color: white;
+    border-width: 5px;
+    font-weight:900;
+    font-size: 20px;
+    color: white;
+}
