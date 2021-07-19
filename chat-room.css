@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(238, 142, 190);
+}
+
+#logo
+{
+	width: 80px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.header
+{
+	color: rgb(250, 6, 120);
+    font-family:"Permanent Marker";
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-top: 80px;
+}
+.input
+{
+	width: 80%;
+}
+
+#room_name
+{
+	font-size: 15px;
+    background-color:lightpink;
+}
+
+#output
+{
+	padding: 10px;
+    width:80%;
+    background: rgba(1, 255, 255, 0.8);
+    border-radius: 15px;
+}
+
+#logout
+{
+	font-size: 20px;
+    float: right;
+}
