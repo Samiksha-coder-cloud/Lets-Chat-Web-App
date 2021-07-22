@@ -12,7 +12,7 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 var user_name = localStorage.getItem("userName");
-document.getElementById("user_name").innerHTML = "Welcome  " + user_name;
+document.getElementById("user_name").innerHTML = "Welcome " + user_name;
 
 function add_room() {
   var room_name = document.getElementById("room_name").value;
@@ -27,7 +27,7 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
   Room_names = childKey;
   //Start code
   console.log(Room_names);
-  var row = "<div class='room_name' id="+Room_names+" onclick='redirect_room(this.id)'>"+Room_names+"</div> <hr>"
+  var row = "<div class='room_name' id="+Room_names+" onclick='redirect_room(this.id)'>"+Room_names+"</div> <hr>";
   document.getElementById("output").innerHTML += row;
   //End code
   });});}
