@@ -20,14 +20,14 @@ function add_room() {
         Purpose: "Adding Room Name"
   });
   localStorage.setItem("roomName", room_name);
-  window.location = "kwitter_page.html";
+  window.location = "chat_page.html";
 }
 
 function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
   Room_names = childKey;
   //Start code
   console.log(Room_names);
-  var row = "<div class='room_name' id="+Room_names+" onclick='redirect_room(this.id)'>"+Room_names+"</div> <hr>";
+  var row = "<div class='room_name' id='"+Room_names+"' onclick='redirect_room(this.id)'>"+Room_names+"</div> <hr>";
   document.getElementById("output").innerHTML += row;
   //End code
   });});}
@@ -36,7 +36,6 @@ getData();
 function redirect_room(name) {
   console.log(name);
   localStorage.setItem("roomName",name);
-  window.location = "chat-page.html";
 } 
 
 function logout() {

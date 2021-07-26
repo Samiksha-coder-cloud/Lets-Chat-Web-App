@@ -1,0 +1,65 @@
+#logo
+{
+	width: 80px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.header
+{
+	color: rgb(250, 6, 120);
+    font-family:"Permanent Marker";
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-top: 80px;
+}
+
+#msg
+{
+	font-size: 15px;
+    background-color:lightpink;
+    width: 80%;
+}
+
+#output
+{
+	padding: 10px;
+    width:80%;
+    background:white;
+    border-radius: 15px;
+}
+
+#logout
+{
+	font-size: 20px;
+    float: right;
+}
+
+body {
+    background-color: rgb(238, 142, 190);
+}
+
+.input_div_message_page
+{
+	position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: rgba(247, 3, 247, 0.8);
+}
+.input_div_message_page label
+{
+	color:white;
+}
+
+.input_div_message_page button
+{
+    background-color:rgb(250, 6, 177);
+	margin-top: 15px;
+	width: 300px; 
+    border-color: white;
+    color: white;
+}
+
+#tick_Img {
+    height: 30px;
+    width: 30px;
+}
