@@ -17,7 +17,7 @@ document.getElementById("user_name").innerHTML = "Welcome " + user_name;
 function add_room() {
   var room_name = document.getElementById("room_name").value;
   firebase.database().ref("/").child(room_name).update({
-        Purpose: "Adding Room Name"
+        purpose: "Adding Room Name"
   });
   localStorage.setItem("roomName", room_name);
   window.location = "chat_page.html";
@@ -36,6 +36,7 @@ getData();
 function redirect_room(name) {
   console.log(name);
   localStorage.setItem("roomName",name);
+  window.location = "chat_page.html"
 } 
 
 function logout() {

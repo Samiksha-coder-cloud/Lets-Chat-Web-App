@@ -35,7 +35,7 @@ function getData() { firebase.database().ref("/"+room_name).on('value', function
   name1 = message_data['name'];
   likes = message_data['like'];
   message = message_data['message'];
-  name_tag = "<h4>"+name1+"<img class='user_tick' id='tick_Img' src='pink_tick.png'></h4>";
+  name_tag = "<h4>"+name1+" <img class='user_tick' id='tick_Img' src='pink_tick.png'></h4>";
   message_tag = "<h4 class='message_h4'>"+message+"</h4>"
   like_button = "<button class='btn btn-info' id='"+firebase_message_id+"' value="+likes+" onclick='likes_btn(this.id)'>";
   span_tag = "<span class='glyphicon glyphicon-thumbs-up'> Likes: "+likes+"</span></button><hr>"
